@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Active state */
+#homeLink.active,
+#aboutLink.active,
+#servicesLink.active,
+#teamLink.active,
+#testimonialsLink.active,
+#contactLink.active {
+  @apply font-bold border-b-2 border-navy py-1;
+}
+/* Menghilangkan efek after pada elemen yang aktif */
+#homeLink.active::after,
+#aboutLink.active::after,
+#servicesLink.active::after,
+#teamLink.active::after,
+#testimonialsLink.active::after,
+#contactLink.active::after {
+  content: none;
+}
+
+/* Tampilan penuh untuk kolom pencarian */
+/* #search-container.fullscreen-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.close-search {
+   position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: red;
+  cursor: pointer; ; 
+} */
+#search-input.fullscreen {
+  @apply w-1/2 opacity-100 p-3 text-base border-2 border-red-500;
+}
+#search-container.fullscreen-search {
+  @apply fixed top-0 left-0 w-full bg-white flex items-center justify-center z-[9999];
+}
+
+.close-search {
+  @apply absolute top-0 right-0 text-2xl text-white cursor-pointer bg-navy rounded-bl-3xl p-2;
+}
+
+/* Back to top */
+.back-to-top {
+  @apply h-12 w-12 bg-navy justify-around items-center fixed z-10 bottom-4 right-2 rounded-full p-2 border-white border-2 shadow-xl hover:animate-pulse;
+}
+/* Back to top */
+
+/* Hero Start */
+.hero-section {
+  @apply bg-slate-100 dark:bg-slate-800 relative;
+}
+
+.main-container {
+  @apply relative overflow-hidden;
+}
+
+.overlay-content {
+  @apply w-full h-screen;
+}
+
+.hero-content {
+  @apply flex justify-center items-center;
+}
+
+.hero-img {
+  @apply w-full h-full object-cover;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-gradient-to-tr from-sea to-transparent opacity-75;
+}
+
+.hero-text {
+  @apply absolute inset-0 bg-black/30 flex flex-col justify-center text-white px-8 lg:px-20;
+}
+
+.hero-text h1 {
+  @apply uppercase text-xl md:text-3xl font-bold mb-1 justify-start text-start mx-10 lg:mx-20;
+}
+
+.hero-text span {
+  @apply text-yellow-500;
+}
+
+.hero-text p {
+  @apply text-sm md:text-xl mb-6 mx-10 lg:mx-20 lg:w-1/2;
+}
+
+.hero-button {
+  @apply w-full pb-10 mx-10 lg:mx-20;
+}
+
+.hero-button a {
+  @apply text-sm font-bold text-white bg-yellow-500 py-3 px-6 rounded-xl hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out;
+}
+
+.hero-button i {
+  @apply text-base font-bold;
+}
+
+.hero-nextprev {
+  @apply transition-all border-2 bg-navy  hover:bg-navy opacity-70 hover:opacity-100 border-white rounded-full p-5;
+}
+#nextprev::before,
+#nextprev::after {
+  @apply text-white font-bold;
+  font-size: 16px;
+}
+
+/* Hero End */
