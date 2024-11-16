@@ -26,8 +26,25 @@ body {
   content: none;
 }
 
+.hamburger {
+  @apply flex flex-col justify-between w-[25px] h-[17px] relative;
+}
 
+.hamburger-line {
+  @apply bg-navy dark:bg-slate-300 h-[3px] w-full rounded-full transition-all duration-300 ease-linear;
+}
 
+.hamburger-active .hamburger-line:nth-child(1) {
+  @apply transform translate-y-[7px] rotate-45;
+}
+
+.hamburger-active .hamburger-line:nth-child(2) {
+  @apply opacity-0;
+}
+
+.hamburger-active .hamburger-line:nth-child(3) {
+  @apply transform -translate-y-[7px] -rotate-45;
+}
 
 /* Back to top */
 .back-to-top {
@@ -52,24 +69,16 @@ body {
   @apply flex justify-center items-center;
 }
 
-.hero-img {
+.hero-cover {
   @apply w-full h-full object-cover;
 }
 
-.hero-overlay {
-  @apply absolute inset-0 bg-gradient-to-tr from-sea to-transparent opacity-75;
-}
-
 .hero-text {
-  @apply absolute inset-0 bg-black/30 flex flex-col justify-center text-white px-8 lg:px-20;
+  @apply absolute inset-0 bg-black/50 flex flex-col justify-center text-white px-8 lg:px-20;
 }
 
 .hero-text h1 {
   @apply uppercase text-xl md:text-3xl font-bold mb-1 justify-start text-start mx-10 lg:mx-20;
-}
-
-.hero-text span {
-  @apply text-yellow-500;
 }
 
 .hero-text p {
@@ -81,7 +90,7 @@ body {
 }
 
 .hero-button a {
-  @apply text-sm font-bold text-white bg-yellow-500 py-3 px-6 rounded-xl hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out;
+  @apply text-sm font-bold text-white bg-yellow-500 py-3 px-6 rounded-full hover:shadow-lg hover:opacity-85 transition duration-300 ease-in-out;
 }
 
 .hero-button i {
