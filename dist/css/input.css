@@ -13,8 +13,9 @@ body {
 #teamLink.active,
 #testimonialsLink.active,
 #contactLink.active {
-  @apply font-bold border-b-2 border-navy py-1;
+  @apply font-bold border-b-2 border-navy dark:border-gray-300;
 }
+
 /* Menghilangkan efek after pada elemen yang aktif */
 #homeLink.active::after,
 #aboutLink.active::after,
@@ -25,37 +26,8 @@ body {
   content: none;
 }
 
-/* Tampilan penuh untuk kolom pencarian */
-/* #search-container.fullscreen-search {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
 
-.close-search {
-   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 24px;
-  color: red;
-  cursor: pointer; ; 
-} */
-#search-input.fullscreen {
-  @apply w-1/2 opacity-100 p-3 text-base border-2 border-red-500;
-}
-#search-container.fullscreen-search {
-  @apply fixed top-0 left-0 w-full bg-white flex items-center justify-center z-[9999];
-}
 
-.close-search {
-  @apply absolute top-0 right-0 text-2xl text-white cursor-pointer bg-navy rounded-bl-3xl p-2;
-}
 
 /* Back to top */
 .back-to-top {
