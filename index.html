@@ -23,36 +23,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!-- Icon Bootstrap -->
-    <style>
-      /* Basic Hamburger Style */
-      /* .hamburger { */
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* justify-content: space-between; */
-      /* width: 30px; */
-      /* height: 22px; */
-      /* position: relative; */
-      /* } */
-
-      /* .hamburger-line {
-        background-color: #1e293b;
-        height: 3px;
-        width: 100%;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-      } */
-
-      /* Transform saat aktif */
-      /* .hamburger-active .hamburger-line:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-      }
-      .hamburger-active .hamburger-line:nth-child(2) {
-        opacity: 0;
-      }
-      .hamburger-active .hamburger-line:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-      } */
-    </style>
   </head>
   <body>
     <header
@@ -61,7 +31,7 @@
       <div
         class="container mx-auto px-4 flex justify-between items-center py-4"
       >
-        <div class="flex items-center">
+        <a href="#home" class="flex items-center">
           <div class="bg-white p-2 rounded-md mr-2">
             <img
               src="dist/img/logo.png"
@@ -70,7 +40,7 @@
             />
           </div>
           <h1 class="text-xl font-bold text-navy dark:text-white">SkyForge</h1>
-        </div>
+        </a>
 
         <div class="flex items-center space-x-4">
           <button
@@ -108,41 +78,65 @@
             <a
               href="#home"
               id="homeLink"
-              class="text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              class="translate font-semibold text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              data-key="home"
             >
-              Home
+              Beranda
             </a>
 
             <a
               href="#about"
               id="aboutLink"
-              class="text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              class="translate text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              data-key="about"
               >Tentang Kami</a
             >
             <a
               href="#services"
               id="servicesLink"
-              class="text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              class="translate text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              data-key="services"
               >Layanan</a
             >
             <a
               href="#team"
               id="teamLink"
-              class="text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              class="translate text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              data-key="team"
               >Tim Kami</a
             >
             <a
               href="#testimonials"
               id="testimonialsLink"
-              class="text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
-              >Testimoni</a
+              class="translate text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              data-key="testimonials"
+              >Kesaksian</a
             >
             <a
               href="#contact"
               id="contactLink"
-              class="text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              class="translate text-gray-700 relative block md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              data-key="contact"
               >Kontak</a
             >
+
+            <div
+              class="hover:opacity-80 transition duration-300 ease-in-out lg:mx-1 text-secondary dark:text-white"
+            >
+              <button
+                id="btnID"
+                class="text-gray-700 relative md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              >
+                ID
+              </button>
+              <span class="text-base py-2">/</span>
+              <button
+                id="btnEN"
+                class="text-gray-700 relative md:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2"
+              >
+                EN
+              </button>
+            </div>
 
             <button
               class="hidden lg:flex pt-2 ml-4 text-xl focus:outline-none transition-all duration-300 text-navy dark:text-white"
@@ -196,13 +190,13 @@
         <div class="overlay-content swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-content">
-              <img src="dist/img/1.jpg" class="hero-cover" />
+              <img src="dist/img/hero/1.jpg" class="hero-cover" />
               <div class="container">
                 <div class="hero-text">
-                  <h1>Innovate, Sustain, and Thrive.</h1>
+                  <h1>Innovating Business, Empowering Growth</h1>
                   <p>
-                    Building a connected, resilient future with cutting-edge
-                    technology.
+                    SkyForge menghadirkan solusi teknologi canggih untuk
+                    mendukung transformasi digital bisnis Anda.
                   </p>
                   <div class="hero-button">
                     <a href="#" class="translate">
@@ -214,11 +208,14 @@
               </div>
             </div>
             <div class="swiper-slide hero-content">
-              <img src="dist/img/2.jpg" class="hero-cover" />
+              <img src="dist/img/hero/2.jpg" class="hero-cover" />
               <div class="container">
                 <div class="hero-text">
-                  <h1>Crafting Tomorrow's Solutions</h1>
-                  <p>Empowering industries with sustainable technology.</p>
+                  <h1>Connecting the Future</h1>
+                  <p>
+                    Bersama SkyForge, kami menciptakan dunia yang lebih
+                    terhubung melalui inovasi teknologi.
+                  </p>
                   <div class="hero-button">
                     <a href="#" class="translate">
                       selengkapnya <i class="bi bi-arrow-right"></i>
@@ -228,11 +225,14 @@
               </div>
             </div>
             <div class="swiper-slide hero-content">
-              <img src="dist/img/3.jpg" class="hero-cover" />
+              <img src="dist/img/hero/3.jpg" class="hero-cover" />
               <div class="container">
                 <div class="hero-text">
-                  <h1>Engineered for Tomorrow</h1>
-                  <p>Creating sustainable solutions that drive progress.</p>
+                  <h1>Sustainable Solutions, Limitless Potential</h1>
+                  <p>
+                    Kami berkomitmen untuk membantu bisnis Anda berkembang
+                    dengan teknologi andal yang berkelanjutan.
+                  </p>
                   <div class="hero-button">
                     <a href="#" class="translate">
                       selengkapnya <i class="bi bi-arrow-right"></i>
@@ -244,19 +244,19 @@
           </div>
 
           <div
-            class="swiper-button-next swiper-navBtn hero-nextprev lg:mr-20"
+            class="swiper-button-next swiper-navBtn hero-nextprev lg:mr-10"
             id="nextprev"
           ></div>
           <div
-            class="swiper-button-prev swiper-navBtn hero-nextprev lg:ml-20"
+            class="swiper-button-prev swiper-navBtn hero-nextprev lg:ml-10"
             id="nextprev"
           ></div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="bg-white py-16">
-      <div class="container flex flex-col lg:flex-row items-center p-8 lg:p-16">
+    <section id="about" class="bg-white py-32">
+      <div class="container flex flex-col lg:flex-row items-center">
         <!-- Text Section -->
         <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
           <h2 class="text-3xl lg:text-4xl font-bold text-indigo-900 mb-4">
@@ -291,24 +291,7 @@
         </div>
 
         <!-- Image Section -->
-        <!-- <div class="lg:w-1/2 flex justify-center lg:justify-end relative">
-          <div class="relative w-full max-w-xs lg:max-w-md">
-            <div
-              class="absolute -top-4 -left-4 w-full h-full border-2 border-yellow-500 rounded-lg"
-            ></div>
-            <div
-              class="absolute top-4 left-4 w-full h-full border-2 border-indigo-600 rounded-lg"
-            ></div>
-            <img
-              src="dist/img/service/2.jpg"
-              alt="Magang Program"
-              class="relative rounded-lg shadow-lg w-full h-auto"
-            />
-          </div>
-        </div> -->
-        <div
-          class="lg:w-1/2 flex justify-center lg:justify-end relative px-4 lg:px-0"
-        >
+        <div class="lg:w-1/2 flex justify-center lg:justify-end relative px-8">
           <div class="relative w-full max-w-xs lg:max-w-md">
             <div
               class="absolute -top-4 -left-4 w-full h-full border-2 border-yellow-400 rounded-lg"
@@ -415,9 +398,9 @@
       </div>
     </section>
 
-    <section id="services" class="bg-gray-100 dark:bg-navy py-16">
+    <section id="services" class="bg-gray-100 dark:bg-navy py-32">
       <!-- Left Section with Image and Text -->
-      <div class="container flex flex-col lg:flex-row p-8 gap-3">
+      <div class="container flex flex-col lg:flex-row gap-3">
         <div class="shadow-lg rounded-lg overflow-hidden lg:w-1/3">
           <div class="bg-blue-900 p-6 text-center rounded-tl-lg">
             <h2
@@ -555,11 +538,11 @@
       </div>
     </section>
 
-    <section id="team" class="bg-white py-16">
+    <section id="team" class="bg-white py-32">
       <div class="container">
         <div class="text-center mb-8">
           <p class="text-sm text-gray-500 uppercase tracking-widest">
-            Expert Plumbers
+            Problem Solver Expert
           </p>
           <h2 class="text-3xl font-bold text-gray-800">Meet Our Team</h2>
         </div>
@@ -573,9 +556,9 @@
                 alt="1"
               />
             </div>
-            <div class="-mt-28 z-0 m-2">
+            <div class="-mt-32 lg:-mt-28 z-0 m-2">
               <div
-                class="relative bg-navy hover:bg-white hover:text-navy bg-opacity-90 hover:bg-opacity-90 text-white p-4 rounded-lg transition-all transform"
+                class="relative bg-navy hover:bg-yellow-400 bg-opacity-90 hover:bg-opacity-90 text-white p-4 rounded-lg transition-all transform"
               >
                 <h3 class="font-bold text-lg text-center">Nam Do San</h3>
                 <p class="text-xs text-center">Chief Executive Officer</p>
@@ -724,7 +707,7 @@
       </div>
     </section>
 
-    <section id="testimonials" class="bg-navy text-white py-16 px-8">
+    <section id="testimonials" class="bg-navy text-white py-32">
       <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Column (Heading and Button) -->
         <div class="space-y-2">
@@ -860,10 +843,10 @@
       </div>
     </section>
 
-    <section id="contact" class="bg-gray-100 py-16 px-6">
+    <section id="contact" class="bg-gray-100 py-32">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Contact Form -->
-        <div>
+        <div class="border-navy border-2 p-8 rounded-3xl bg-white">
           <h3
             class="text-yellow-500 text-sm font-semibold uppercase tracking-wide mb-2"
           >
@@ -880,7 +863,7 @@
                   >Your Name *</label
                 >
                 <input
-                  class="w-full rounded-md shadow-sm focus:ring-yellow-500 border-navy focus:border-yellow-500 p-2"
+                  class="w-full rounded-md shadow-sm focus:ring-yellow-500 border-yellow-500 p-2 bg-slate-50 border-2"
                   type="text"
                   id="name"
                   placeholder="Ex. John Doe"
@@ -892,7 +875,7 @@
                   >Email *</label
                 >
                 <input
-                  class="w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2"
+                  class="w-full rounded-md shadow-sm focus:ring-yellow-500 border-yellow-500 p-2 bg-slate-50 border-2"
                   type="email"
                   id="email"
                   placeholder="example@gmail.com"
@@ -905,7 +888,7 @@
                 >Subject *</label
               >
               <input
-                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2"
+                class="w-full rounded-md shadow-sm focus:ring-yellow-500 border-yellow-500 p-2 bg-slate-50 border-2"
                 type="text"
                 id="subject"
                 placeholder="Enter Subject"
@@ -917,7 +900,7 @@
                 >Your Message *</label
               >
               <textarea
-                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2"
+                class="w-full rounded-md shadow-sm focus:ring-yellow-500 border-yellow-500 p-2 bg-slate-50 border-2"
                 id="message"
                 placeholder="Enter here.."
                 rows="4"
@@ -997,7 +980,7 @@
       </div>
     </section>
 
-    <footer id="contact" class="bg-navy text-white py-12">
+    <footer id="contact" class="bg-navy text-white pt-16 pb-8">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
         <div class="">
           <div class="flex items-center mb-4">
@@ -1098,7 +1081,7 @@
             </p>
             <a
               href="#"
-              class="text-teal-400 font-semibold hover:text-teal-300 text-sm flex items-center"
+              class="text-yellow-500 font-semibold hover:text-yellow-400 text-sm flex items-center"
             >
               Our Careers <i class="bi bi-arrow-right ml-2"></i>
             </a>
@@ -1124,22 +1107,60 @@
     <!-- Back To Top End -->
 
     <script src="dist/js/header-active.js"></script>
+    <script src="dist/js/languange.js"></script>
     <!-- Navbar mode Mobile -->
     <script>
-      // JavaScript for toggling the mobile menu
-      // const menuToggle = document.getElementById("menu-toggle");
-      // const mobileMenu = document.getElementById("mobile-menu");
+      // const menuToggle = document.querySelector("#menu-toggle");
+      // const mobileMenu = document.querySelector("#mobile-menu");
 
       // menuToggle.addEventListener("click", () => {
-      //   const isHidden = mobileMenu.classList.contains("-translate-x-full");
-      //   mobileMenu.classList.toggle("-translate-x-full", !isHidden);
+      //   menuToggle.classList.toggle("hamburger-active");
+      //   mobileMenu.classList.toggle("-translate-x-full"); // Animasi menu
       // });
-      const menuToggle = document.querySelector("#menu-toggle");
-      const mobileMenu = document.querySelector("#mobile-menu");
 
-      menuToggle.addEventListener("click", () => {
+      // Untuk Reload Ketika Tampilan Mobile
+      // Ambil elemen hamburger dan menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Fungsi untuk menutup mobile menu
+      function closeMobileMenu() {
+        menuToggle.classList.remove("hamburger-active");
+        mobileMenu.classList.add("-translate-x-full"); // Menutup menu
+      }
+
+      // Fungsi untuk mengatur ulang navigasi saat tautan diklik
+      function handleNavigationClick(event) {
+        const targetId = event.target.getAttribute("href").replace("#", "");
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          // Scroll ke elemen yang dituju
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          // Simulasikan reload dengan menyembunyikan menu
+          closeMobileMenu();
+          setActiveElement(`${targetId}Link`); // Tandai tautan sebagai aktif
+          event.preventDefault(); // Hindari *reload* asli
+        }
+      }
+
+      // Tambahkan event listener ke semua tautan di menu
+      [
+        homeLink,
+        aboutLink,
+        servicesLink,
+        teamLink,
+        testimonialsLink,
+        contactLink,
+      ].forEach(function (link) {
+        link.addEventListener("click", handleNavigationClick);
+      });
+
+      // Hamburger toggle untuk membuka/menutup menu
+      menuToggle.addEventListener("click", function () {
         menuToggle.classList.toggle("hamburger-active");
-        mobileMenu.classList.toggle("-translate-x-full"); // Animasi menu
+        mobileMenu.classList.toggle("-translate-x-full");
       });
     </script>
 
@@ -1208,6 +1229,8 @@
           });
           localStorage.setItem("theme", "dark"); // Simpan pilihan tema gelap
         }
+
+        location.reload();
       }
 
       // Inisialisasi tema saat halaman dimuat
@@ -1231,108 +1254,6 @@
     </script>
 
     <!-- search -->
-    <!-- <script>
-      const searchIcon = document.getElementById("search-icon");
-      const searchInput = document.getElementById("search-input");
-
-      // Event listener untuk menampilkan kolom input saat ikon diklik
-      searchIcon.addEventListener("click", function () {
-        if (searchInput.classList.contains("w-0")) {
-          searchInput.classList.remove("w-0", "opacity-0");
-          searchInput.classList.add("w-48", "opacity-100"); // Ubah lebar sesuai keinginan
-          searchInput.focus(); // Fokus ke kolom input
-        } else {
-          searchInput.classList.add("w-0", "opacity-0");
-          searchInput.classList.remove("w-48", "opacity-100");
-        }
-      });
-
-      // Event listener untuk menyembunyikan kolom input saat kehilangan fokus
-      searchInput.addEventListener("blur", function () {
-        searchInput.classList.add("w-0", "opacity-0");
-        searchInput.classList.remove("w-48", "opacity-100");
-      });
-    </script> -->
-
-    <!-- <script>
-      const searchIcon = document.getElementById("search-icon");
-      const searchContainer = document.getElementById("search-container");
-      const searchInput = document.getElementById("search-input");
-      const closeSearchIcon = document.querySelector(".close-search");
-
-      function toggleFullscreenSearch() {
-        const isMobile = window.innerWidth < 768;
-
-        if (isMobile) {
-          // Mode Mobile: Selalu tampilkan kolom pencarian
-          searchInput.classList.add("w-full", "opacity-100");
-          searchInput.focus();
-        } else {
-          // Mode Desktop: Toggle tampilan fullscreen
-          searchContainer.classList.toggle("fullscreen-search");
-          searchInput.classList.toggle("fullscreen");
-          searchInput.focus();
-
-          if (searchContainer.classList.contains("fullscreen-search")) {
-            closeSearchIcon.classList.remove("hidden");
-          } else {
-            closeSearchIcon.classList.add("hidden");
-          }
-        }
-      }
-
-      // Event listener untuk ikon pencarian
-      searchIcon.addEventListener("click", (e) => {
-        e.preventDefault(); // Mencegah aksi default
-        toggleFullscreenSearch();
-      });
-
-      // Event listener untuk tombol close
-      closeSearchIcon.addEventListener("click", () => {
-        searchContainer.classList.remove("fullscreen-search");
-        searchInput.classList.remove("fullscreen");
-        closeSearchIcon.classList.add("hidden");
-      });
-
-      // Event listener untuk perubahan ukuran layar
-      window.addEventListener("resize", () => {
-        if (window.innerWidth < 768) {
-          searchInput.classList.add("w-full", "opacity-100");
-          searchContainer.classList.remove("fullscreen-search");
-          searchInput.classList.remove("fullscreen");
-          closeSearchIcon.classList.add("hidden");
-        } else {
-          searchInput.classList.remove("w-full", "opacity-100");
-        }
-      });
-    </script> -->
-    <!-- <script>
-      const searchIcon = document.getElementById("search-icon");
-      const searchContainer = document.getElementById("search-container");
-      const searchInput = document.getElementById("search-input");
-      const closeSearchIcon = document.querySelector(".close-search");
-
-      function toggleSearchPopup() {
-        if (searchContainer.classList.contains("show")) {
-          searchContainer.classList.remove("show");
-        } else {
-          searchContainer.classList.add("show");
-          searchInput.focus();
-        }
-      }
-
-      // Event listener untuk ikon pencarian
-      searchIcon.addEventListener("click", (e) => {
-        e.preventDefault();
-        toggleSearchPopup();
-      });
-
-      // Event listener untuk tombol close
-      closeSearchIcon.addEventListener("click", () => {
-        searchContainer.classList.remove("show");
-      });
-    </script> -->
-
     <script>
       // Elements
       const searchToggle = document.getElementById("search-toggle");
@@ -1373,5 +1294,58 @@
         }
       });
     </script>
+
+    <!-- <script>
+      // Active Navbar
+      var btnID = document.getElementById("btnID");
+      var btnEN = document.getElementById("btnEN");
+      
+
+      // Mendapatkan elemen #home, #about, dll.
+      var homeSection = document.getElementById("home");
+      var aboutSection = document.getElementById("about");
+
+      // Mengecek status elemen aktif dari penyimpanan sesi
+      var activeElement = sessionStorage.getItem("activeElement");
+
+      // Jika halaman saat ini adalah index.html atau root, set btnID sebagai aktif
+      if (activeElement) {
+        document.getElementById(activeElement).classList.add("active");
+      } else {
+        setActiveElement("btnID");
+      }
+
+      // Event listener untuk scroll
+      window.addEventListener("scroll", function () {
+        var screenHeight = window.innerHeight / 2;
+
+        if (window.scrollY < aboutSection.offsetTop - screenHeight) {
+          setActiveElement("btnID");
+        } else if (
+          window.scrollY >= aboutSection.offsetTop - screenHeight &&
+          window.scrollY < servicesSection.offsetTop - screenHeight
+        ) {
+          setActiveElement("btnEN");
+        } else if (
+          window.scrollY >= servicesSection.offsetTop - screenHeight &&
+          window.scrollY < teamSection.offsetTop - screenHeight
+        ) {
+          setActiveElement("servicesLink");
+        } 
+      });
+
+      // Fungsi untuk menandai elemen sebagai aktif dan menyimpan ke penyimpanan sesi
+      function setActiveElement(elementId) {
+        [
+          btnID,
+          btnEN
+        ].forEach(function (el) {
+          el.classList.remove("active");
+        });
+
+        document.getElementById(elementId).classList.add("active");
+        sessionStorage.setItem("activeElement", elementId);
+      }
+    </script> -->
   </body>
 </html>

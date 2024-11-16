@@ -52,3 +52,4 @@ function setActiveElement(elementId) {
     document.getElementById(elementId).classList.add("active");
     sessionStorage.setItem("activeElement", elementId);
 }
+
