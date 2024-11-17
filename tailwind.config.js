@@ -9,18 +9,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        // primary: '#14b8a6',
-        // dark: '#1A1A19',
+        dark: '#1E293B',
         secondary: '#64748b',
-        // charcoal: '#2D2D2D',
-        // gunmetal:'#1F2933' ,
-        // onyx :'#121212' ,
-        beige:  '#F3F3E0' ,
-        navy:  '#001F3F ' ,
-        // blue:  '#608BC1 ' ,
-        sea:  '#608BC1 ' ,
-        cold:  '#CBDCEB ' ,
-
+        navy:  '#001F3F' ,
+        gold:  '#EAB308' ,
       },
       screens: {
         '2xl': '1320px',

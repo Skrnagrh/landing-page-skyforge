@@ -6,36 +6,33 @@ body {
   @apply bg-white dark:bg-black;
   font-family: "Inter", sans-serif;
 }
-
-/* Active state */
-#homeLink.active,
-#aboutLink.active,
-#servicesLink.active,
-#teamLink.active,
-#testimonialsLink.active,
-#contactLink.active {
-  @apply font-bold border-b-2 border-navy dark:border-gray-300;
+/* Header Start */
+.header-section {
+  @apply bg-white dark:bg-navy shadow-md fixed top-0 left-0 w-full z-50;
+}
+.header-container {
+  @apply container mx-auto px-4 flex justify-between items-center py-4;
+}
+.header-a {
+  @apply flex items-center;
+}
+.header-a div {
+  @apply bg-white p-2 rounded-md mr-2;
+}
+.header-a div img {
+  @apply h-8 dark:outline-1 dark:outline-white;
+}
+.header-a h1 {
+  @apply text-xl font-bold text-navy dark:text-white;
 }
 
-/* Menghilangkan efek after pada elemen yang aktif */
-#homeLink.active::after,
-#aboutLink.active::after,
-#servicesLink.active::after,
-#teamLink.active::after,
-#testimonialsLink.active::after,
-#contactLink.active::after {
-  content: none;
+/* Button Mobile */
+.button-mobile {
+  @apply flex items-center space-x-4;
 }
-
-#btnID.active,
-#btnEN.active {
-  @apply font-bold border-b-2 border-navy dark:border-gray-300;
+.button-mobile #dark-mode-mobile {
+  @apply lg:hidden right-0 text-xl transition-all duration-300 text-navy dark:text-white;
 }
-#btnID.active:after,
-#btnEN.active:after {
-  content: none;
-}
-
 
 .hamburger {
   @apply flex flex-col justify-between w-[25px] h-[17px] relative;
@@ -56,11 +53,105 @@ body {
 .hamburger-active .hamburger-line:nth-child(3) {
   @apply transform -translate-y-[7px] -rotate-45;
 }
+/* Button Mobile */
+
+/* Navbar */
+/* .navbar-menu {
+  @apply fixed top-0 left-0 w-64 h-full bg-white dark:bg-navy shadow-lg lg:bg-none lg:shadow-none transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:w-auto md:h-auto md:translate-x-0 md:flex md:space-x-6;
+} */
+.navbar-menu {
+  @apply fixed top-0 left-0 w-64 h-full bg-white dark:bg-navy shadow-lg lg:bg-none lg:shadow-none;
+}
+.navbar-space {
+  @apply space-y-4 lg:space-y-0 p-4 lg:p-0 lg:flex lg:space-x-6;
+}
+.navbar-logo {
+  @apply flex items-center py-1 lg:hidden;
+}
+
+.navbar-img {
+  @apply bg-white p-2 rounded-md mr-2;
+}
+.navbar-img img {
+  @apply h-8 dark:outline-1 dark:outline-white;
+}
+.navbar-logo h1 {
+  @apply text-xl font-bold text-navy dark:text-white;
+}
+.nav-item {
+  @apply font-semibold text-gray-700 relative block lg:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2;
+}
+.language-toggle {
+  @apply hover:opacity-80 transition duration-300 ease-in-out lg:mx-1 text-secondary dark:text-white;
+}
+.language {
+  @apply text-gray-700 relative lg:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2;
+}
+#dark-mode-desktop {
+  @apply hidden lg:flex pt-2 ml-4 text-xl transition-all duration-300 text-navy dark:text-white;
+}
+.search-desktop {
+  @apply hidden lg:flex items-center relative;
+}
+/* Kelas untuk ikon pencarian yang aktif */
+.search-icon-active {
+  @apply hover:bg-navy dark:hover:bg-white dark:text-white dark:hover:text-navy hover:text-white p-2 m-2 rounded-full border border-navy dark:border-white font-bold text-xl;
+}
+.kolom-search {
+  @apply items-center bg-white border border-navy rounded-full px-4 py-1 z-30;
+}
+.kolom-search input {
+  @apply flex-grow text-gray-700 outline-none;
+}
+
+/* Navbar */
+
+/* Active state */
+#homeLink.active,
+#aboutLink.active,
+#servicesLink.active,
+#teamLink.active,
+#testimonialsLink.active,
+#contactLink.active,
+#btnID.active,
+#btnEN.active {
+  @apply font-bold border-b-2 border-navy dark:border-gray-300;
+}
+
+/* Menghilangkan efek after pada elemen yang aktif */
+#homeLink.active::after,
+#aboutLink.active::after,
+#servicesLink.active::after,
+#teamLink.active::after,
+#testimonialsLink.active::after,
+#contactLink.active::after,
+#btnID.active:after,
+#btnEN.active:after {
+  content: none;
+}
+
+/* Header End */
 
 /* Back to top */
-.back-to-top {
+/* .back-to-top {
   @apply h-12 w-12 bg-navy justify-around items-center fixed z-10 bottom-4 right-2 rounded-full p-2 border-white border-2 shadow-xl hover:animate-pulse;
 }
+
+.back-to-top i {
+  @apply font-bold text-white text-lg relative ;
+   
+} */
+.back-to-top {
+  @apply h-12 w-12 bg-navy justify-center items-center fixed z-10 bottom-4 right-2 rounded-full border-white border-2 shadow-xl hover:animate-pulse flex-col;
+}
+.line-up {
+  @apply bg-white h-[2px] w-1/2;
+}
+/* Gaya untuk ikon */
+.back-to-top i {
+  @apply text-white text-xl;
+}
+
 /* Back to top */
 
 /* Hero Start */
@@ -116,5 +207,4 @@ body {
   @apply text-white font-bold;
   font-size: 16px;
 }
-
 /* Hero End */
