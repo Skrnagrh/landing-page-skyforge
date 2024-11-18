@@ -1,6 +1,3 @@
-Untuk mengganti repositori dan informasi yang relevan dengan nama repositori baru **"landing-page-skyforge"**, berikut adalah pembaruan yang perlu dilakukan pada dokumentasi `README.md`:
-
-````markdown
 # Landing Page Company Profile - SkyForge
 
 Selamat datang di repositori **Landing Page Company Profile - SkyForge**! Proyek ini adalah implementasi landing page untuk profil perusahaan **SkyForge** yang dibangun menggunakan framework **Tailwind CSS**. Landing page ini dirancang untuk menampilkan informasi perusahaan secara ringkas dan profesional, serta menyediakan navigasi yang mudah diakses oleh pengunjung.
@@ -49,7 +46,6 @@ Landing page ini memiliki beberapa bagian utama:
    ```bash
    git clone https://github.com/Skrnagrh/landing-page-skyforge.git
    ```
-````
 
 2. Masuk ke direktori proyek:
 
@@ -88,7 +84,5 @@ landing-page-skyforge/
 ## Kontribusi
 
 Kontribusi sangat disambut. Anda dapat membuat pull request atau melaporkan masalah di bagian "Issues".
-
-```
 
 ```
