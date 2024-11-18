@@ -2,27 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* General */
 body {
   @apply bg-white dark:bg-black;
   font-family: "Inter", sans-serif;
 }
 /* Header Start */
 .header-section {
-  @apply bg-white dark:bg-navy shadow-md fixed top-0 left-0 w-full z-50;
+  @apply bg-white dark:bg-black shadow-md fixed top-0 left-0 w-full z-50;
 }
 .header-container {
   @apply container mx-auto px-4 flex justify-between items-center py-4;
 }
-.header-a {
+.header-logo {
   @apply flex items-center;
 }
-.header-a div {
+.header-logo div {
   @apply bg-white p-2 rounded-md mr-2;
 }
-.header-a div img {
+.header-logo div img {
   @apply h-8 dark:outline-1 dark:outline-white;
 }
-.header-a h1 {
+.header-logo h1 {
   @apply text-xl font-bold text-navy dark:text-white;
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 .hamburger-line {
-  @apply bg-navy dark:bg-slate-300 h-[3px] w-full rounded-full transition-all duration-300 ease-linear;
+  @apply bg-navy dark:bg-white h-[3px] w-full rounded-full transition-all duration-300 ease-linear;
 }
 
 .hamburger-active .hamburger-line:nth-child(1) {
@@ -56,11 +57,8 @@ body {
 /* Button Mobile */
 
 /* Navbar */
-/* .navbar-menu {
-  @apply fixed top-0 left-0 w-64 h-full bg-white dark:bg-navy shadow-lg lg:bg-none lg:shadow-none transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:w-auto md:h-auto md:translate-x-0 md:flex md:space-x-6;
-} */
 .navbar-menu {
-  @apply fixed top-0 left-0 w-64 h-full bg-white dark:bg-navy shadow-lg lg:bg-none lg:shadow-none;
+  @apply fixed top-0 left-0 w-64 h-full bg-white dark:bg-black shadow-lg lg:bg-none lg:shadow-none;
 }
 .navbar-space {
   @apply space-y-4 lg:space-y-0 p-4 lg:p-0 lg:flex lg:space-x-6;
@@ -79,7 +77,7 @@ body {
   @apply text-xl font-bold text-navy dark:text-white;
 }
 .nav-item {
-  @apply font-semibold text-gray-700 relative block lg:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-2;
+  @apply font-semibold text-gray-700 relative block lg:inline hover:font-bold hover:text-navy dark:text-gray-300 transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-navy dark:after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full py-1 lg:py-2;
 }
 .language-toggle {
   @apply hover:opacity-80 transition duration-300 ease-in-out lg:mx-1 text-secondary dark:text-white;
@@ -98,10 +96,10 @@ body {
   @apply hover:bg-navy dark:hover:bg-white dark:text-white dark:hover:text-navy hover:text-white p-2 m-2 rounded-full border border-navy dark:border-white font-bold text-xl;
 }
 .kolom-search {
-  @apply items-center bg-white border border-navy rounded-full px-4 py-1 z-30;
+  @apply items-center bg-white dark:bg-dark border border-navy dark:border-white rounded-full px-4 py-1 z-30;
 }
 .kolom-search input {
-  @apply flex-grow text-gray-700 outline-none;
+  @apply flex-grow bg-white dark:bg-dark text-gray-700 outline-none dark:text-white;
 }
 
 /* Navbar */
@@ -133,33 +131,25 @@ body {
 /* Header End */
 
 /* Back to top */
-/* .back-to-top {
-  @apply h-12 w-12 bg-navy justify-around items-center fixed z-10 bottom-4 right-2 rounded-full p-2 border-white border-2 shadow-xl hover:animate-pulse;
-}
-
-.back-to-top i {
-  @apply font-bold text-white text-lg relative ;
-   
-} */
 .back-to-top {
-  @apply h-12 w-12 bg-navy justify-center items-center fixed z-10 bottom-4 right-2 rounded-full border-white border-2 shadow-xl hover:animate-pulse flex-col;
+  @apply h-12 w-12 bg-navy dark:bg-black justify-center items-center fixed z-10 bottom-4 right-2 rounded-full border-white dark:border-slate-300 border-2 shadow-xl hover:animate-pulse flex-col;
 }
 .line-up {
-  @apply bg-white h-[2px] w-1/2;
+  @apply bg-white dark:bg-slate-300 h-[2px] w-1/2;
 }
 /* Gaya untuk ikon */
 .back-to-top i {
-  @apply text-white text-xl;
+  @apply text-white dark:border-slate-300 text-xl font-extrabold;
 }
-
 /* Back to top */
+/* General */
 
 /* Hero Start */
 .hero-section {
   @apply bg-slate-100 dark:bg-slate-800 relative;
 }
 
-.main-container {
+.hero-container {
   @apply relative overflow-hidden;
 }
 
@@ -180,7 +170,7 @@ body {
 }
 
 .hero-text h1 {
-  @apply uppercase text-xl md:text-3xl font-bold mb-1 justify-start text-yellow-500 text-start mx-10 lg:mx-20;
+  @apply uppercase text-xl md:text-3xl font-bold mb-1 justify-start text-gold text-start mx-10 lg:mx-20;
 }
 
 .hero-text p {
@@ -192,7 +182,7 @@ body {
 }
 
 .hero-button a {
-  @apply text-sm font-bold text-white bg-yellow-500 py-3 px-6 rounded-full hover:shadow-lg hover:opacity-85 transition duration-300 ease-in-out;
+  @apply text-sm font-bold text-white bg-gold py-3 px-6 rounded-full hover:shadow-lg hover:opacity-85 transition duration-300 ease-in-out;
 }
 
 .hero-button i {
@@ -200,7 +190,7 @@ body {
 }
 
 .hero-nextprev {
-  @apply transition-all border-2 bg-navy  hover:bg-navy opacity-70 hover:opacity-100 border-white rounded-full p-5;
+  @apply transition-all border-2 bg-navy  hover:bg-navy dark:bg-dark  dark:hover:bg-dark opacity-70 hover:opacity-100 border-white rounded-full p-5;
 }
 #nextprev::before,
 #nextprev::after {
@@ -208,3 +198,299 @@ body {
   font-size: 16px;
 }
 /* Hero End */
+
+/* About Start */
+.about-section {
+  @apply bg-white dark:bg-gunmetal py-32;
+}
+.about-container {
+  @apply container flex flex-col lg:flex-row items-center;
+}
+.about-text {
+  @apply lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0;
+}
+.about-text h2 {
+  @apply text-3xl lg:text-4xl font-bold text-navy dark:text-gold mb-4;
+}
+.about-text p {
+  @apply text-gray-600 dark:text-slate-200 mb-4;
+}
+.about-button {
+  @apply flex items-center bg-navy dark:bg-slate-950 hover:bg-navy/85 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300;
+}
+.about-image {
+  @apply lg:w-1/2 flex justify-center lg:justify-end relative px-8;
+}
+.about-imagecont {
+  @apply relative w-full max-w-xs lg:max-w-md;
+}
+.image-border1 {
+  @apply absolute -top-4 -left-4 w-full h-full border-2 border-yellow-400 rounded-lg;
+}
+.image-border2 {
+  @apply absolute top-4 left-4 w-full h-full border-2 border-navy dark:border-slate-300 rounded-lg;
+}
+.about-image-content {
+  @apply relative rounded-lg shadow-lg w-full h-auto;
+}
+
+.badge-team {
+  @apply absolute -bottom-8 left-8 bg-white dark:bg-black py-2 px-6 shadow-lg rounded-lg flex items-center space-x-2;
+}
+
+.badge-service {
+  @apply absolute bottom-10 -right-10 bg-white dark:bg-black py-2 px-6 shadow-lg rounded-lg flex items-center space-x-2;
+}
+.badge-skyforge {
+  @apply absolute bottom-8 -left-10 bg-white dark:bg-black p-2 shadow-lg rounded-lg flex items-center space-x-2;
+}
+
+.icon-badge-team {
+  @apply bg-navy text-white p-1 rounded-full;
+}
+.icon-badge-service {
+  @apply bg-gold dark:bg-slate-500 text-white p-1 rounded-full;
+}
+.badge-skyforge img {
+  @apply h-8 w-auto rounded-full bg-white p-1;
+}
+.text-badge1 {
+  @apply text-xs font-semibold dark:text-white;
+}
+.text-badge2 {
+  @apply text-xs text-gray-500;
+}
+/* About  End*/
+
+/* Services Start */
+.service-section {
+  @apply bg-gray-100 dark:bg-dark py-32;
+}
+.service-container {
+  @apply container flex flex-col lg:flex-row gap-3;
+}
+.service-image {
+  @apply shadow-lg rounded-lg overflow-hidden lg:w-1/3;
+}
+.service-image img {
+  @apply w-full h-80 object-cover;
+}
+.service-text {
+  @apply bg-gold dark:bg-black p-6 text-center rounded-tl-lg;
+}
+.service-text h2 {
+  @apply text-3xl font-bold text-navy dark:text-gold;
+}
+.service-text p {
+  @apply text-white mt-2;
+}
+.service-card {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-3 lg:w-2/3;
+}
+.service-card p {
+  @apply text-gray-600 dark:text-white mb-2;
+}
+.service-card-1 {
+  @apply bg-white dark:bg-black shadow-md rounded-lg p-6 border-2 border-white hover:border-navy dark:hover:border-indigo-600 transition duration-300 ease-in-out;
+}
+.service-card-2 {
+  @apply bg-white dark:bg-black shadow-md rounded-lg p-6 border-2 border-white hover:border-gold transition duration-300 ease-in-out;
+}
+.service-card-1 h3 {
+  @apply ml-4 font-bold uppercase text-navy dark:text-indigo-600;
+}
+.service-card-2 h3 {
+  @apply ml-4 font-bold uppercase text-gold;
+}
+.service-card-icon {
+  @apply flex items-center mb-4;
+}
+.bg-icon1 {
+  @apply bg-navy dark:bg-indigo-600 w-10 h-10 rounded-full flex items-center justify-center text-white text-xl;
+}
+.bg-icon2 {
+  @apply bg-gold w-10 h-10 rounded-full flex items-center justify-center text-white text-xl;
+}
+.service-button1 {
+  @apply flex items-center bg-navy dark:bg-indigo-600 hover:bg-navy/85 hover:bg-indigo-800 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300;
+}
+.service-button2 {
+  @apply flex items-center bg-yellow-500 hover:bg-yellow-500/85 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300;
+}
+/* Services End */
+
+/* Team Start */
+.team-section {
+  @apply bg-white dark:bg-gunmetal py-32;
+}
+.team-text {
+  @apply text-center mb-8;
+}
+.team-text p {
+  @apply text-sm text-gray-500 uppercase tracking-widest;
+}
+.team-text h2 {
+  @apply text-3xl font-bold text-gray-800 dark:text-white;
+}
+.team-content {
+  @apply grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
+}
+.team-image {
+  @apply overflow-hidden rounded-lg shadow-lg;
+}
+.team-image img {
+  @apply w-full h-72 object-cover;
+}
+.team-name {
+  @apply -mt-24 z-0 m-2;
+}
+.team-name-bg {
+  @apply relative bg-navy dark:bg-dark dark:hover:bg-white hover:bg-yellow-400 bg-opacity-90 hover:bg-opacity-90 dark:bg-opacity-90 dark:hover:bg-opacity-90 text-white dark:text-white dark:hover:text-black p-2 rounded-lg transition-all transform;
+}
+.team-name h3 {
+  @apply font-bold text-base lg:text-lg text-center;
+}
+.team-name p {
+  @apply text-xs text-center;
+}
+.team-icon {
+  @apply flex justify-center mt-2 space-x-2;
+}
+.team-icon a {
+  @apply hover:text-navy/50;
+}
+/* Team End */
+
+/* Testimonials Start */
+.testi-section {
+  @apply bg-navy dark:bg-dark text-white py-32;
+}
+.testi-container {
+  @apply container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8;
+}
+.testi-left h6 {
+  @apply uppercase text-yellow-500 tracking-wider text-base font-bold;
+}
+.testi-left h2 {
+  @apply text-3xl lg:text-4xl font-bold;
+}
+.testi-left p {
+  @apply text-secondary dark:text-slate-300;
+}
+.testi-left button {
+  @apply flex items-center bg-yellow-400 hover:bg-gold text-navy font-bold py-3 px-6 rounded-full shadow-md transition duration-300;
+}
+.testi-right {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-6;
+}
+.testi-card {
+  @apply bg-white dark:bg-black rounded-lg shadow-lg relative;
+}
+.testi-overlay {
+  @apply bg-navy/5 rounded-br-full;
+}
+.testi-ulasan {
+  @apply text-black dark:text-slate-300 text-sm mb-4;
+}
+.testi-flexbox {
+  @apply flex items-center space-x-4;
+}
+.testi-name {
+  @apply font-bold text-navy dark:text-gold;
+}
+.testi-customer {
+  @apply text-xs text-gray-500 dark:text-slate-300;
+}
+.testi-quote{
+  @apply text-yellow-400 absolute -top-6 left-2 text-5xl
+}
+/* Testimonials End */
+
+/* Contact Start */
+.contact-section {
+  @apply bg-gray-100 dark:bg-gunmetal py-32;
+}
+.contact-container {
+  @apply container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+.contact-form {
+  @apply border-navy dark:border-black border-2 p-8 rounded-3xl bg-white dark:bg-black;
+}
+.contact-form h3 {
+  @apply text-yellow-500 text-sm font-semibold uppercase tracking-wide mb-2;
+}
+.contact-form h2 {
+  @apply text-3xl font-bold mb-6 dark:text-white;
+}
+.contact-form h2 span {
+  @apply text-yellow-500 italic;
+}
+
+.contact-form-name label {
+  @apply block text-gray-700 dark:text-white font-medium mb-1 mt-3;
+}
+.contact-form-name input {
+  @apply w-full rounded-md shadow-sm focus:ring-yellow-500 border-yellow-500 dark:border-white p-2 bg-slate-50 dark:bg-black border dark:text-white;
+}
+.contact-form-name textarea {
+  @apply w-full rounded-md shadow-sm focus:ring-yellow-500 border-yellow-500 dark:border-white p-2 bg-slate-50 dark:bg-black border dark:text-white;
+}
+.contact-form button {
+  @apply flex items-center bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300;
+}
+.contact-info {
+  @apply bg-navy dark:bg-black text-white rounded-3xl p-8 relative;
+}
+.contact-info h4 {
+  @apply text-lg font-semibold mb-2;
+}
+.contact-info p {
+  @apply text-gray-300;
+}
+.contact-info-icon {
+  @apply flex space-x-4;
+}
+.contact-info-icon a {
+  @apply w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-600 text-white transition duration-300;
+}
+/* Contact End */
+
+/* Footer Start */
+.footer-section {
+  @apply bg-navy dark:bg-black/80 text-white pt-16 pb-8;
+}
+.footer-container {
+  @apply container grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+.footer-logo {
+  @apply flex items-center mb-4;
+}
+.footer-description {
+  @apply text-gray-300 text-sm leading-relaxed;
+}
+.footer-icon h4 {
+  @apply text-lg font-semibold mb-2;
+}
+.footer-icon a {
+  @apply w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-600 transition duration-300 text-white;
+}
+.footer-links {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-2;
+}
+.footer-links h4 {
+  @apply font-semibold mb-2;
+}
+.footer-links ul,
+p {
+  @apply text-gray-300 space-y-2 text-sm;
+}
+.footer-links li {
+  @apply hover:text-white;
+}
+.footer-careers {
+  @apply text-yellow-500 font-semibold hover:text-yellow-400 text-sm flex items-center;
+}
+.footer-copyright {
+  @apply border-t border-white mt-8 pt-6 text-center text-white text-sm;
+}
+/* Footer End*/
